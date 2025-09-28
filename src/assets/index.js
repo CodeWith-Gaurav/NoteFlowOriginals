@@ -1,6 +1,6 @@
-import brainwave from "./brainwave.svg";
+import noteflow from "./noteflow.svg";
 import check from "./check.svg";
-import brainwaveSymbol from "./brainwave-symbol.svg";
+import noteflowSymbol from "./noteflow-symbol.svg";
 import brainwaveWhiteSymbol from "./brainwave-symbol-white.svg";
 import play from "./play.svg";
 import gradient from "./gradient.png";
@@ -8,6 +8,11 @@ import smallSphere from "./4-small.png";
 import grid from "./grid.png";
 import check2 from "./check-02.svg";
 import loading1 from "./loading-01.svg";
+import Gemini from "./Gemini.svg";
+import tailwindcss from "./tailwindcss.svg";
+import vite from "./vite.svg";
+import java from "./java.svg";
+import reactLogo from "./reactLogo.svg";
 import yourlogo from "./yourlogo.svg";
 import homeSmile from "./home-smile.svg";
 import file02 from "./file-02.svg";
@@ -67,6 +72,9 @@ import benefitIcon1 from "./benefits/icon-1.svg";
 import benefitIcon2 from "./benefits/icon-2.svg";
 import benefitIcon3 from "./benefits/icon-3.svg";
 import benefitIcon4 from "./benefits/icon-4.svg";
+import benefitIcon5 from "./benefits/icon-5.svg";
+import benefitIcon6 from "./benefits/icon-6.svg";
+
 import benefitImage2 from "./benefits/image-2.png";
 
 import discordBlack from "./socials/discord.svg";
@@ -76,16 +84,21 @@ import telegram from "./socials/telegram.svg";
 import twitter from "./socials/twitter.svg";
 
 export {
-  brainwave,
+  noteflow,
   check,
   check2,
   loading1,
-  brainwaveSymbol,
+  noteflowSymbol,
   brainwaveWhiteSymbol,
   play,
   gradient,
   smallSphere,
   grid,
+  reactLogo,
+  java,
+  tailwindcss,
+  Gemini,
+  vite,
   yourlogo,
   homeSmile,
   file02,
@@ -138,6 +151,8 @@ export {
   benefitIcon2,
   benefitIcon3,
   benefitIcon4,
+  benefitIcon5,
+  benefitIcon6,
   benefitImage2,
   discordBlack,
   facebook,

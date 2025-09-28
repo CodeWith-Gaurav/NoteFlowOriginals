@@ -1,8 +1,11 @@
+import React from "react";
 import {
   benefitIcon1,
   benefitIcon2,
   benefitIcon3,
   benefitIcon4,
+  benefitIcon5,
+  benefitIcon6,
   benefitImage2,
   chromecast,
   disc02,
@@ -12,8 +15,10 @@ import {
   figma,
   file02,
   framer,
+  Gemini,
   homeSmile,
   instagram,
+  java,
   notification2,
   notification3,
   notification4,
@@ -22,6 +27,7 @@ import {
   plusSquare,
   protopie,
   raindrop,
+  reactLogo,
   recording01,
   recording03,
   roadmap1,
@@ -31,10 +37,23 @@ import {
   searchMd,
   slack,
   sliders04,
+  tailwindcss,
   telegram,
   twitter,
+  vite,
   yourlogo,
 } from "../assets";
+import { HiOutlineDocumentText, HiOutlineUpload, HiOutlineSparkles } from "react-icons/hi";
+import g1 from "../assets/gallery/g-1.jpg";
+import g2 from "../assets/gallery/g-2.jpg";
+import g3 from "../assets/gallery/g-3.jpg";
+import g4 from "../assets/gallery/g-4.jpg";
+import g5 from "../assets/gallery/g-5.jpg";
+import g6 from "../assets/gallery/g-6.jpg";
+import g7 from "../assets/gallery/g-7.jpg";
+import g8 from "../assets/gallery/g-8.jpg";
+import g9 from "../assets/gallery/g-9.jpg";
+import g10 from "../assets/gallery/g-10.jpg";
 
 export const navigation = [
   {
@@ -44,27 +63,22 @@ export const navigation = [
   },
   {
     id: "1",
-    title: "Pricing",
-    url: "#pricing",
+    title: "Dashboard",
+    url: "/dashboard",
   },
   {
     id: "2",
-    title: "How to use",
-    url: "#how-to-use",
+    title: "Our Team",
+    url: "#team",
   },
   {
     id: "3",
-    title: "Roadmap",
-    url: "#roadmap",
-  },
-  {
-    id: "4",
     title: "New account",
     url: "#signup",
     onlyMobile: true,
   },
   {
-    id: "5",
+    id: "4",
     title: "Sign in",
     url: "#login",
     onlyMobile: true,
@@ -75,12 +89,12 @@ export const heroIcons = [homeSmile, file02, searchMd, plusSquare];
 
 export const notificationImages = [notification4, notification3, notification2];
 
-export const companyLogos = [yourlogo, yourlogo, yourlogo, yourlogo, yourlogo];
+export const companyLogos = [reactLogo, java, Gemini, tailwindcss, vite];
 
 export const brainwaveServices = [
-  "Photo generating",
-  "Photo enhance",
-  "Seamless Integration",
+  "Structure & Summarize",
+  "Visualize Key Concepts",
+  "Enhance Readability",
 ];
 
 export const brainwaveServicesIcons = [
@@ -209,34 +223,34 @@ export const pricing = [
   {
     id: "0",
     title: "Basic",
-    description: "AI chatbot, personalized recommendations",
+    description: "For everyday learning and personal study.",
     price: "0",
     features: [
-      "An AI chatbot that can understand your queries",
-      "Personalized recommendations based on your preferences",
-      "Ability to explore the app and its features without any cost",
+      "up to 15 high-quality infographic generations from your notes every month.",
+      "Easily upload PDF documents from lectures or paste raw text from online articles to get started.",
+      "Shareable Links for all your guides",
     ],
   },
   {
     id: "1",
     title: "Premium",
     description: "Advanced AI chatbot, priority support, analytics dashboard",
-    price: "9.99",
+    price: "4.99",
     features: [
-      "An advanced AI chatbot that can understand complex queries",
-      "An analytics dashboard to track your conversations",
-      "Priority support to solve issues quickly",
+      "Unlimited AI generations",
+      "Access to AI Quizzes & Text-to-Audio",
+      "Priority support to resolve issues quickly",
     ],
   },
   {
     id: "2",
-    title: "Enterprise",
-    description: "Custom AI chatbot, advanced analytics, dedicated account",
+    title: "Support Us",
+    description: "Love NoteFlow? Help us grow.",
     price: null,
     features: [
-      "An AI chatbot that can understand your queries",
-      "Personalized recommendations based on your preferences",
-      "Ability to explore the app and its features without any cost",
+      "Make a one-time contribution by buying us a chai, or become a monthly member.",
+      "Unlock Unlimited Access (Members)",
+      "Directly Fund Development",
     ],
   },
 ];
@@ -244,16 +258,16 @@ export const pricing = [
 export const benefits = [
   {
     id: "0",
-    title: "Ask anything",
-    text: "Lets users quickly find answers to their questions without having to search through multiple sources.",
+    title: "Versatile Inputs",
+    text: " Upload PDFs, paste text, or just enter a topic. Our AI handles any format",
     backgroundUrl: "./src/assets/benefits/card-1.svg",
     iconUrl: benefitIcon1,
     imageUrl: benefitImage2,
   },
   {
     id: "1",
-    title: "Improve everyday",
-    text: "The app uses natural language processing to understand user queries and provide accurate and relevant responses.",
+    title: "Instant Infographic Generation",
+    text: " Let our AI instantly build structured, visual infographics from your notes.",
     backgroundUrl: "./src/assets/benefits/card-2.svg",
     iconUrl: benefitIcon2,
     imageUrl: benefitImage2,
@@ -261,16 +275,16 @@ export const benefits = [
   },
   {
     id: "2",
-    title: "Connect everywhere",
-    text: "Connect with the AI chatbot from anywhere, on any device, making it more accessible and convenient.",
+    title: "Visual Learning",
+    text: " We turn text into clear summaries, key points, and infographics for better recall.",
     backgroundUrl: "./src/assets/benefits/card-3.svg",
     iconUrl: benefitIcon3,
     imageUrl: benefitImage2,
   },
   {
     id: "3",
-    title: "Fast responding",
-    text: "Lets users quickly find answers to their questions without having to search through multiple sources.",
+    title: "Easy Sharing",
+    text: "Get a unique link for any guide. Share it instantly with anyone, anywhere.",
     backgroundUrl: "./src/assets/benefits/card-4.svg",
     iconUrl: benefitIcon4,
     imageUrl: benefitImage2,
@@ -278,18 +292,18 @@ export const benefits = [
   },
   {
     id: "4",
-    title: "Ask anything",
-    text: "Lets users quickly find answers to their questions without having to search through multiple sources.",
+    title: "Listen & Learn",
+    text: "Turn any study guide into an audiobook for learning on the go.",
     backgroundUrl: "./src/assets/benefits/card-5.svg",
-    iconUrl: benefitIcon1,
+    iconUrl: benefitIcon6,
     imageUrl: benefitImage2,
   },
   {
     id: "5",
-    title: "Improve everyday",
-    text: "The app uses natural language processing to understand user queries and provide accurate and relevant responses.",
+    title: "Real-Time Collaboration",
+    text: "Invite friends to view and edit your study guides together in real-time.",
     backgroundUrl: "./src/assets/benefits/card-6.svg",
-    iconUrl: benefitIcon2,
+    iconUrl: benefitIcon5,
     imageUrl: benefitImage2,
   },
 ];
@@ -325,4 +339,69 @@ export const socials = [
     iconUrl: facebook,
     url: "#",
   },
+];
+
+export const dashboardUserData = {
+  name: "Gaurav",
+  initials: "G",
+};
+
+export const dashboardStats = {
+  infographicsCreated: 12,
+  filesUploaded: 28,
+  mostActiveDay: "Wednesday",
+  topTopic: "AI in Education",
+};
+
+export const dashboardRecentActivity = [
+  { id: 1, text: "Created an infographic on 'AI in Education'", time: "2 days ago", icon: HiOutlineSparkles },
+  { id: 2, text: "Viewed a summary of 'Cloud Computing Basics'", time: "yesterday", icon: HiOutlineDocumentText },
+  { id: 3, text: "Uploaded 'Machine_Learning_Notes.pdf'", time: "3 days ago", icon: HiOutlineUpload },
+];
+export const dashboardRecommendations = [
+    "Since you uploaded about Cloud Computing, you might like 'The Future of Serverless'.",
+    "Explore 'Advanced Python Techniques' to complement your programming notes."
+];
+
+export const galleryImages = [
+  {
+    src: g1,
+    alt: 'A holographic AI brain with glowing neural networks'
+  },
+  {
+    src: g2,
+    alt: 'A futuristic flowchart explaining blockchain technology with glassmorphic blocks'
+  },
+  {
+    src: g3,
+    alt: 'A stunning visualization of a bioluminescent DNA double helix'
+  },
+  {
+    src: g4,
+    alt: 'A 3D project management dashboard with holographic Gantt charts'
+  },
+  {
+    src: g5,
+    alt: 'An elegant infographic of the solar system with luminous orbital rings'
+  },
+  {
+    src: g6,
+    alt: 'A dynamic illustration of cloud computing architecture with pulsating light'
+  },
+  {
+    src: g7,
+    alt: 'A sophisticated 3D data visualization of financial market charts'
+  },
+  {
+    src: g8,
+    alt: 'An abstract infographic visualizing the creative process as a stream of liquid light'
+  },
+  {
+    src: g9,
+    alt: 'A futuristic cybersecurity shield deflecting digital threats'
+  },
+  {
+    src: g10,
+    alt: 'A stunning data visualization of the Earth with glowing data connections'
+  }
 ];

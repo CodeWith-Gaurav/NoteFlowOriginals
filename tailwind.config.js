@@ -20,7 +20,7 @@ export default {
         },
         n: {
           1: "#FFFFFF",
-          2: "#CAC6DD",
+          2: "#FFFFFF",
           3: "#ADA8C3",
           4: "#757185",
           5: "#3F3A52",
